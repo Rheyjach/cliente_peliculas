@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./assets/Orbitron.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --font-sans: "Orbitron";
+    --breakpoint-xs: 450px
+}
+
+
+body {
+    @apply text-center bg-gradient-to-l from-red-700 to-red-400 tracking-wider text-amber-200
+}
