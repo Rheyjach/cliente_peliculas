@@ -11,7 +11,6 @@ export function AuthProvider({ children }) {
     useEffect(() => {
         async function verificarPerfil() {
             try {
-                console.log(API_BASE_URL)
                 const promesa = await fetch(`${API_BASE_URL}/peliculas/usuarios/profile`, {
                     method: "GET",
                     credentials: "include"
